@@ -21,5 +21,5 @@ IF NOT [%1] == [] (
   SET branch=%1
 )
 
-git commit -m "Closes softlayer/%rootFolder%#%branch%“
+git commit -m "Closes softlayer/%rootFolder%#%branch%"
 GOTO :EOF
