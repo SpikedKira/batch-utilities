@@ -1,3 +1,5 @@
+@ECHO OFF
+
 
 REM Loop Over Files Marked Changed By Git
 :main
@@ -9,5 +11,5 @@ GOTO :EOF
 
 REM Add an Empty Line to End of File
 :modFile
-ECHO. >> %~f1
+(ECHO.) >> %~f1
 GOTO :EOF
