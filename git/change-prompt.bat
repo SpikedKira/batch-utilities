@@ -29,7 +29,9 @@ SET fullPath=%cd%
 
 REM Remove Path and Project from Full Path
 CALL SET projectPath=%%fullPath:%rootFolder%=%%
-CALL SET projectPath=%%projectPath:%projectName%=%%  
+CALL SET projectPath=%%projectPath:%projectName%=%%
 
 
 PROMPT (%projectName% @ %branch%) %projectPath%$G
+
+TITLE %projectName%
