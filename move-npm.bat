@@ -12,7 +12,7 @@ GOTO help
 :main
 setx /M path "%~f1;%PATH%"
 npm config set prefix "%~f1" -g
-npm install -g npm @2.14.4
+npm install -g npm@2.14.4
 npm cache clean
 npm config set cache "%~f1\npm-cache" -g
 GOTO :EOF
